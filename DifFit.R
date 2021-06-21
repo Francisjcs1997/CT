@@ -1,6 +1,4 @@
-library(CA3variants)
-
-#Depois do tratamento de dados e do c·lculo das matrizes de covari‚ncia cruzada:
+#Depois do tratamento de dados e do c√°lculo das matrizes de covari√¢ncia cruzada CO_I:
 Xa=as.matrix(cbind(CO_I[1:4,],CO_I[5:8,],CO_I[9:12,]))
 Xb=t(as.matrix(CO_I))
 l1=as.numeric(t(CO_I[1:4,]));l2=as.numeric(t(CO_I[5:8,]));l3=as.numeric(t(CO_I[9:12,]))
@@ -62,19 +60,19 @@ for (n in 1:19){
     }
   }
 }
-M=M[c(3,5:19),] #retirar modelo com 4 componentes porque È impossÌvel construir
+M=M[c(3,5:19),] #retirar modelo com 4 componentes porque √© imposs√≠vel construir
 M_diff=M
 
 vec=numeric(16)
 vec[1]=M_diff[1,5]
 
-for (i in 2:16){ #calcular diferenÁa com o modelo anterior
+for (i in 2:16){ #calcular diferen√ßa com o modelo anterior
   vec[i]=round(M_diff[i,5]-M_diff[i-1,5],4)
 }
 M_diff=cbind(M_diff,vec)
 
 vec=numeric(16)
-for (i in 1:15){      #calcular r·cio
+for (i in 1:15){      #calcular r√°cio
   vec[i]=round(M_diff[i,6]/max(M_diff[(i+1):16,6]),3)
 }
 M_diff=cbind(M_diff,vec)
