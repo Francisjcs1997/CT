@@ -34,7 +34,7 @@ barplot(c(A,B,C),names.arg = c("1ºT","2ºT","3ºT"),ylab="Interação")
 
 
 #####
-#ESCOLHA E CONSTRUÇÃO DO MODELO ATRAVÉS DO ALS EM 
+#ESCOLHA E CONSTRUÇÃO DO MODELO ATRAVÉS DO ALS EM https://github.com/Francisjcs1997/CT/blob/main/ALS.R
 
 #####
 #VISUALIZAÇÃO DE COMPONENTES
