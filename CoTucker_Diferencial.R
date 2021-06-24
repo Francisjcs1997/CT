@@ -54,7 +54,7 @@ urina3=data.frame(urina3)
 remove(Dn,Z1,Z2,Z3,A,B,C)
 
 #####
-#ALS
+#ALS em https://github.com/Francisjcs1997/CT/blob/main/ALS.R
 
 #####
 #VISUALIZAÇÃO DE COMPONENTES
